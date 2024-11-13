@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management - Login</title>
+<style>
+    /* General reset */
+* {
+    back
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    align-items: center;
+    justify-content: center;!
+}
+
+/* Body styling */
+body {
+    align-items: center;!
+    justify-content: center;!
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f7e9, #c8e6c9);
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.nav-links a:hover {
+    background-color: #3a9d3a;
+    border-radius: 5px;
+}
+
+
+
+/* Container styling */
+.login-container {
+    width: 360px;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 10px;
+}
+
+/* Header styling */
+.header {
+    margin-bottom: 1.5rem;
+}
+
+.logo {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 1rem;
+    padding: 0%;
+    margin: 0%;
+}
+
+.title {
+    font-size: 1.8rem;
+    color: #388E3C;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Form styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.3rem;
+    display: inline-block;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.05);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #66bb6a;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(102, 187, 106, 0.1);
+}
+
+/* Forgot password link */
+.forgot-password {
+    font-size: 0.9rem;
+    color: #66bb6a;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    display: block;
+    text-align: right;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #388E3C;
+}
+
+/* Login button styling */
+.login-button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #66bb6a, #43a047);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+    box-shadow: 0px 4px 8px rgba(67, 160, 71, 0.2);
+}
+
+.login-button:hover {
+    background: linear-gradient(90deg, #43a047, #2e7d32);
+    transform: translateY(-2px);
+}
+
+/* Signup prompt */
+.signup-prompt {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1.5rem;
+}
+
+.signup-prompt a {
+    color: #12b51a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.signup-prompt a:hover {
+    color: #388E3C;
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="yadi">Sustainify</h2>
+        <ul class="nav-links">
+            <li onclick="document.location='index.html'" ><a href="#home">Home</a></li>
+            <li onclick="document.location='about.html'"><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <div class="login-container">
+        <!-- Header with Logo -->
+        <div class="header">
+            <img src="Images/logo.jpg" alt="Waste Management Logo" class="logo">
+            <h1 class="title">Welcome Back!</h1>
+            <p class="subtitle">Log in to manage waste sustainably</p>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-container">
+            <form>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <a href="#" class="forgot-password">Forgot password?</a>
+                
+                <button type="submit" class="login-button">Log In</button>
+            </form>
+
+            <p class="signup-prompt">
+                Don’t have an account? <a href="#">Sign up</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

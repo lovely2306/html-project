@@ -3,9 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recycle Page - Go Green</title>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f8f5;
+    color: #333;
+}
+.top{
+    width: 100%;  
+    background-color: #f2f2f2; 
+    text-align: center; s, 'Times New Roman', ser;
+    height: 40px;
+            
+        }
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.nav-links a:hover {
+    background-color: #3a9d3a;
+    border-radius: 5px;
+}
+
+
+.header {
+    
+    background: linear-gradient(135deg, #6bc36b, #2f9e2f);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    clip-path: ellipse(100% 70% at 50% 0%);
+}
+
+
+.header h1 {
+    margin-top: -80px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 7px 1px 5px rgba(0,0,0,0.3);
+}
+
+.header p {
+margin-bottom: 80;
+    font-size: 1.3rem;
+    margin-top: -50
+
+}
+
+
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.intro-section, .involved-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+}
+
+.tips-section, .resource-section {
+    margin-top: 30px;
+    background: #f2fff2;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+/* Cards Styling */
+.tips-cards, .resource-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card, .resource-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 280px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.card:hover, .resource-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card h3, .resource-card h3 {
+    color: #4CAF50;
+    margin: 15px 0;
+}
+
+.card img, .resource-card img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+/* Get Involved Styling */
+.involved-section {
+    background: linear-gradient(135deg, #f2fff2, #ffffff);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social span {
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+    </style>
 </head>
 <body>
- 
+    <div class="top">
+        <h1>Recycle</h1>
+        </div>
+    <nav class="navbar">
+        <h2 class="yadi">Sustainify</h2>
+        
+        <ul class="nav-links">
+            <li onclick="document.location='index.html'" ><a href="#home">Home</a></li>
+            <li onclick="document.location='contact.html'"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Header Section -->
+    <header class="header">
+      
+            
+        <div class="header-content">
+            <h1>GO GREEN</h1>
+            <p>Recycle: Transform Waste into Resources</p>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <h2>Welcome to the Recycle Page!</h2>
+        <p>Learn how recycling helps preserve our planet and discover how you can contribute.</p>
+    </section>
+
+    <!-- Tips for Recycling Section -->
+    <section class="tips-section">
+        <h2>Tips for Recycling</h2>
+        <div class="tips-cards">
+            <div class="card">
+                <img src="Images/circle.jfif"Recycle Icon">
+                <h3>Understand What Can Be Recycled</h3>
+                <p>A guide on materials that can and cannot be recycled.</p>
+            </div>
+            <div class="card">
+                <img src="Images/sort.jfif" alt="Sort Icon">
+                <h3>Sorting Guide</h3>
+                <p>Tips for properly sorting recyclables from non-recyclables.</p>
+            </div>
+            <div class="card">
+                <img src="Images/process.jfif" alt="Process Icon">
+                <h3>Recycling Process</h3>
+                <p>An infographic showing the recycling process from collection to repurposing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Center Section -->
+    <section class="resource-section">
+        <h2>Resource Center for Recycling</h2>
+        <div class="resource-cards">
+            <div class="resource-card">
+                <img src="blog-icon.png" alt="Blog Icon">
+                <h3>Blog</h3>
+                <p>Latest articles on recycling trends, tips, and innovations.</p>
+            </div>
+            <div class="resource-card">
+                <img src="guide-icon.png" alt="Guide Icon">
+                <h3>Downloadable Guides</h3>
+                <p>Free resources and infographics on recycling practices.</p>
+            </div>
+            <div class="resource-card">
+                <img src="video-icon.png" alt="Video Icon">
+                <h3>Video Tutorials</h3>
+                <p>Educational videos on various aspects of recycling.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="involved-section">
+        <h2>Get Involved</h2>
+        <p>Ready to make a difference? Join local recycling programs, volunteer for community clean-up events, and share your recycling efforts on social media.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Contact Us: +00 123 4567890 | example@example.com</p>
+        <p>123 Street, City, State 45678</p>
+        <div class="footer-social">
+            <span>#GoGreen</span>
+            <span>#SaveThePlanet</span>
+        </div>
+    </footer>
 </body>
 </html>

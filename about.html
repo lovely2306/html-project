@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainify - Sustainable Waste Management</title>
+<style>
+    /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f9f4;
+    line-height: 1.6;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.nav-links a:hover {
+    background-color: #3a9d3a;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('forest-bg.jpg'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 60px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #388e3c;
+}
+
+/* Info Section */
+.info-section {
+    padding: 60px 20px;
+    margin: 30px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 2.2em;
+    color: #388e3c;
+    margin-bottom: 15px;
+}
+
+.info-section p, .info-section ul {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.info-section ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    max-width: 700px;
+    margin: 20px auto;
+    color: #333;
+}
+
+.info-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Why Choose Us Section */
+
+.why-choose-us {
+    background-color: #e8f5e9;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.why-choose-us ul li {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.why-choose-us strong {
+    color: #2e7d32;
+}
+
+/* Contact Us Section */
+a{
+    text-decoration: none;
+    color: #e8f5e9;
+font-size: 20px;
+}
+.contact-us {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.contact-us h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #2e7d32;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="yadi">Sustainify</h2>
+        <ul class="nav-links">
+            <li onclick="document.location='index.html'" ><a href="#home">Home</a></li>
+            <li onclick="document.location='about.html'"><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <!-- Header Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Your Partner in Sustainable Waste Management</h1>
+            <p>Welcome to Sustainify, your one-stop solution for waste management! We are passionate about creating a cleaner and healthier planet, and we believe that responsible waste disposal is a crucial step towards achieving this goal.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- Mission Section -->
+    <section class="info-section mission-section">
+        <h2>Our Mission</h2>
+        <p>To encourage the use of sustainable waste management techniques by communities, companies, and individuals in order to reduce environmental impact and promote a circular economy.</p>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="info-section vision-section">
+        <h2>Our Vision</h2>
+        <p>To be the top provider of all-inclusive and cutting-edge waste management solutions, promoting responsible behavior, education, and technology to bring about good change.</p>
+    </section>
+
+    <!-- Go Green Section -->
+    <section class="info-section go-green">
+        <h2>What Does it Mean to Go Green?</h2>
+        <p>Going green is about making choices that are better for the environment. This can include things like:</p>
+        <ul>
+            <li>Reducing our consumption of energy and resources.</li>
+            <li>Recycling and composting.</li>
+            <li>Buying products that are made from sustainable materials.</li>
+            <li>Supporting businesses that are committed to environmental responsibility.</li>
+            <li>Making more sustainable choices such as riding a bike instead of driving.</li>
+        </ul>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="info-section why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li><strong>Reduce Your Environmental Footprint:</strong> By partnering with us, you contribute to reducing landfill waste and promoting resource conservation.</li>
+            <li><strong>Cost-Effective Solutions:</strong> Our efficient waste management systems can help you save money on disposal costs and maximize resource recovery.</li>
+            <li><strong>Compliance Expertise:</strong> We ensure compliance with all relevant regulations and standards, providing peace of mind for your business or organization.</li>
+            <li><strong>Expert Guidance and Support:</strong> Our dedicated team provides professional guidance and support to help you implement effective waste management strategies.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-us">
+        <h2>Contact Us</h2>
+<h3>Facebook:</h3>
+        <a href="https://facebook.com" class="link">Sustainify</a> 
+    <br>
+    <br>
+    <h3>Instagram:</h3>
+     <a href="https://instagram.com" class="link">Sustainify</a>
+       <br> <br>
+       <h3>Email:</h3>
+       <a href="https://gmail.com" class="link">Sustainify</a>
+       <br>
+       <br>
+       <p><strong>Phone Number:</strong> 09774298032</p>
+       <p><strong>Address:</strong> I.T. Park, Cebu City, Philippines, 6000 Cebu</p>
+        <p>We are excited to collaborate with you and work together to create a more sustainable world!</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Sustainify. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

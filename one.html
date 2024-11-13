@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Handling & Transport</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e8f5e9; /* Light green background */
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #388e3c, #4caf50); /* Green gradient */
+    color: white;
+    padding: 30px 0; /* Reduced padding */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #388e3c;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.nav-links a:hover {
+    background-color: #3a9d3a;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 2.5em; /* Smaller font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Solution Section Styles */
+.solutions {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.solution {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.solution:hover {
+    transform: scale(1.05);
+}
+
+.solution h2 {
+    font-size: 2.2em;
+    color: #388e3c; /* Darker green for titles */
+    margin-bottom: 15px;
+}
+
+.solution p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c6b2f; /* Darker green */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Smaller font size for mobile */
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    .solution {
+        padding: 20px;
+    }
+
+    .solution h2 {
+        font-size: 1.8em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
+
+    /* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+}
+.header {
+    background-color: #2e7d32;
+    padding: 15px 20px;
+    color: #fff;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header .nav-links a:hover {
+    color: rgba(46, 125, 50, 0.8);
+}
+
+.header {
+    background-color: #81c784;
+    color: #2e7d32;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header:hover {
+    background-color: #a5d6a7;
+    color: #1b5e20;
+
+}
+
+/* Waste Segregation Section Styling */
+.waste-segregation {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #e8f5e9, #a5d6a7);
+}
+
+.waste-segregation .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.waste-segregation h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+.waste-segregation .intro {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+}
+/* Waste Handling Section Styling */
+.waste-handling {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #2e8b57 40%, #00a896 100%);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    margin-top: -8px;
+    width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Title Styling */
+.waste-handling h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Intro Styling */
+.intro {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #e0f7fa;
+}
+
+/* Method Section Styling */
+.method {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.method:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon Styling */
+.icon {
+    flex-shrink: 0;
+    background: #2e8b57;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Content Styling */
+.content {
+    text-align: left;
+}
+
+.content h2 {
+    font-size: 1.6em;
+    color: #2e8b57;
+    margin-bottom: 8px;
+}
+
+.content p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .method {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon {
+        margin-bottom: 10px;
+    }
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="yadi">Sustainify</h2>
+        <ul class="nav-links">
+            <li onclick="document.location='index.html'" ><a href="#home">Home</a></li>
+            <li onclick="document.location='about.html'"><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <section class="waste-handling">
+        <div class="container">
+            <h1>Waste Handling & Transport</h1>
+            <p class="intro">
+                Waste handling and transport is a crucial part of sustainable waste management. Proper techniques ensure safe, efficient disposal and reduce the environmental impact.
+            </p>
+            
+            <div class="method">
+                <div class="icon">
+                    <img src="icons/domestic-waste.png" alt="Domestic Waste Icon">
+                </div>
+                <div class="content">
+                    <h2>Domestic Waste Collection</h2>
+                    <p>
+                        Local governments or private companies often manage household waste collection, ensuring regular pickups and encouraging residents to separate recyclables to improve processing efficiency.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="method">
+                <div class="icon">
+                    <img src="icons/industrial-waste.png" alt="Industrial Waste Icon">
+                </div>
+                <div class="content">
+                    <h2>Industrial & Commercial Waste Collection</h2>
+                    <p>
+                        Industrial waste, managed by private companies, requires specialized handling due to its volume and hazardous nature, ensuring safe disposal to prevent environmental harm.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="method">
+                <div class="icon">
+                    <img src="icons/curbside-collection.png" alt="Curbside Collection Icon">
+                </div>
+                <div class="content">
+                    <h2>Curbside Collection</h2>
+                    <p>
+                        The most common waste collection method in urban areas, curbside collection promotes waste segregation with color-coded bins for recycling, compost, and general waste.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="method">
+                <div class="icon">
+                    <img src="icons/vacuum-collection.png" alt="Vacuum Collection Icon">
+                </div>
+                <div class="content">
+                    <h2>Vacuum Collection</h2>
+                    <p>
+                        High-tech urban areas utilize vacuum collection systems, reducing truck traffic and pollution. Waste travels through underground tubes to treatment facilities, ensuring clean and efficient transport.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="method">
+                <div class="icon">
+                    <img src="icons/transfer-station.png" alt="Transfer Station Icon">
+                </div>
+                <div class="content">
+                    <h2>Transfer Stations</h2>
+                    <p>
+                        In rural regions, transfer stations temporarily hold waste, allowing it to be bulk-transported to disposal facilities, saving on fuel and optimizing logistics over long distances.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

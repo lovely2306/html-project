@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Solutions</title>
+    <style>
+        /* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9fafc;
+    color: #333;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.nav-links a:hover {
+    background-color: #3a9d3a;
+    border-radius: 5px;
+}
+
+
+
+.header {
+    background-color: #2d6a4f;
+    padding: 1rem 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffd166;
+}
+
+.nav a {
+    color: #ffd166;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section styling */
+.hero {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('waste_management_bg.jpg') center/cover no-repeat;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+}
+
+/* Solutions section styling */
+.solutions-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+}
+
+.solution-card {
+    width: 30%;
+    background: linear-gradient(145deg, #ffffff, #f3f4f8);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.solution-card h2 {
+    color: #2d6a4f;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.solution-card p {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+.solution-card button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background-color: #ffd166;
+    color: #2d6a4f;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.solution-card button:hover {
+    background-color: #f4a261;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2d6a4f;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="yadi">Sustainify</h2>
+        <ul class="nav-links">
+            <li onclick="document.location='index.html'" ><a href="#home">Home</a></li>
+            <li onclick="document.location='about.html'"><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h1>Our Waste Management Solutions</h1>
+        <p>Creating a cleaner, sustainable future through effective waste management.</p>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions-section">
+        <div class="solution-card">
+            <h2>Waste Handling & Transport</h2>
+            <p>
+                Methods of waste collection vary by region, with different approaches to domestic and industrial waste.
+                Curbside collection is common in developed areas, with waste trucks collecting segregated bins.
+            </p>
+            <button onclick="document.location='one.html'">Learn More</button>
+        </div>
+
+        <div class="solution-card">
+            <h2>Automated Waste Collection</h2>
+            <p>
+                Vacuum collection systems transport waste directly from buildings to disposal points, a sustainable and efficient solution used in parts of Europe and North America.
+            </p>
+            <button onclick="document.location='two.html'">Learn More</button>
+        </div>
+
+        <div class="solution-card">
+            <h2>Waste Segregation</h2>
+            <p>
+                Proper waste segregation reduces landfill pollution and facilitates recycling and composting, a key practice for sustainable waste management.
+            </p>
+            <button onclick="document.location='three.html'">Learn More</button>
+        </div>
+        <div class="solution-card">
+            <h2>Recycling and Resource Recovery</h2>
+            <p>
+                Proper waste segregation reduces landfill pollution and facilitates recycling and composting, a key practice for sustainable waste management.</p>
+            </p>
+            <button onclick="document.location='four.html'">Learn More</button>
+        </div>
+        <div class="solution-card">
+            <h2>Zero-Waste Initiatives</h2>
+            <p>
+                Zero-waste initiatives aim to eliminate waste entirely by promoting sustainable production, consumption, and waste management practices. These programs focus on waste prevention, reduction, and reuse.            </p>
+            <button onclick="document.location='five.html'">Learn More</button>
+        </div>
+        <div class="solution-card">
+            <h2>Hazardous Waste Management</h2>
+            <p>
+                Handling and disposal of hazardous waste require specialized systems due to the potential health and environmental risks  </p>
+            <button onclick="document.location='six.html'">Learn More</button>
+        </div>
+        <div class="solution-card">
+            <h2>Public Awareness and Education</h2>
+            <p>
+                Educating the public on waste management practices is essential for a successful waste management strategy. Public involvement can help reduce waste generation and encourage responsible behavior.  </p>
+            <button onclick="document.location='seven.html'">Learn More</button>
+        </div>
+        
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>© 2024 Waste Management Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>

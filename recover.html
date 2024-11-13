@@ -3,9 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recover Page - Waste Management</title>
+    <style>
+        /* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    background-color: #f5f5f5;
+}
+.top{
+    width: 100%;  
+    background-color: #f2f2f2; 
+    text-align: center; s, 'Times New Roman', ser;
+    height: 40px;
+            
+        }
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.nav-links a:hover {
+    background-color: #3a9d3a;
+    border-radius: 5px;
+}
+
+/* Header Section */
+.header {
+    background-image: linear-gradient(rgba(0, 100, 0, 0.5), rgba(0, 100, 0, 0.5)), url('header-image.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Section Styles */
+.content-section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    border-bottom: 3px solid #4CAF50;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Card Styles for Types of Recovery */
+.types-section {
+    padding: 2rem;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1.5rem;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #4CAF50;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+    </style>
 </head>
 <body>
     
+    <div class="top">
+        <h1>Recover</h1>
+        </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2 class="yadi">Sustainify</h2>
+        
+        <ul class="nav-links">
+            <li onclick="document.location='index.html'" ><a href="#home">Home</a></li>
+            <li onclick="document.location='contact.html'"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Welcome to the Recover Page!</h1>
+        <p>Explore the essential role of resource recovery in sustainable waste management.</p>
+    </header>
+
+    <!-- Main Content -->
+    <section class="content-section">
+        <div class="section-title">
+            <h2>What is Recovery?</h2>
+        </div>
+        <p>Resource recovery involves reclaiming valuable materials from waste to prevent them from ending up in landfills. This process conserves resources and supports sustainable practices.</p>
+    </section>
+
+    <!-- Importance of Recovery -->
+    <section class="content-section">
+        <div class="section-title">
+            <h2>Why Recovery Matters</h2>
+        </div>
+        <p>Recovery reduces waste volume, minimizes environmental impact, and provides alternative resources like energy and raw materials.</p>
+    </section>
+
+    <!-- Types of Recovery -->
+    <section class="types-section">
+        <div class="section-title">
+            <h2>Types of Recovery</h2>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <h3>Energy Recovery</h3>
+                <p>Waste-to-energy technologies convert waste into usable energy, reducing reliance on fossil fuels.</p>
+            </div>
+            <div class="card">
+                <h3>Material Recovery</h3>
+                <p>Processes like shredding and sorting help reclaim valuable materials like metals and plastics.</p>
+            </div>
+            <div class="card">
+                <h3>Organic Recovery</h3>
+                <p>Methods such as composting and anaerobic digestion turn organic waste into valuable resources for agriculture.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How You Can Help -->
+    <section class="content-section">
+        <div class="section-title">
+            <h2>How You Can Help</h2>
+        </div>
+        <ul>
+            <li><strong>Participate in Local Programs:</strong> Join local resource recovery programs and initiatives.</li>
+            <li><strong>Support Recycling Facilities:</strong> Use and support local recycling and recovery facilities.</li>
+            <li><strong>Advocate for Policies:</strong> Promote policies that improve resource recovery.</li>
+            <li><strong>Educate and Spread the Word:</strong> Help raise awareness about the benefits of resource recovery.</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Join our resource recovery movement by volunteering, sharing your experiences, and connecting with us on social media.</p>
+    </footer>
 </body>
 </html>
