@@ -3,37 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Join Us - Sustainify</title>
+<style>
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f8f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2a9d8f;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar .join-button {
+    padding: 0.6rem 1.2rem;
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hero {
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.example.com/hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 4rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .hero-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 1rem auto;
+}
+
+.about, .benefits, .programs, .call-to-action {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.benefits ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.benefits ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+.benefits ul li:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #2a9d8f;
+    margin-bottom: 1rem;
+}
+
+.program-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.program-card {
+    flex: 1 1 200px;
+    padding: 1.5rem;
+    background-color: #e9f5f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.program-card h3 {
+    color: #264653;
+    margin-bottom: 0.5rem;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+}
+
+.call-to-action {
+    text-align: center;
+}
+
+.call-to-action p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.call-to-action .join-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.footer {
+    text-align: center;
+    background
+
+</style>
 </head>
 <body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Join Us - Sustainify</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
     
+        <!-- Navbar -->
+        <header class="navbar">
+            <div class="logo">Sustainify</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+            <button class="join-button">Join Us</button>
+        </header>
+    
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Join Us on the Journey to a Sustainable Future 🌍</h1>
+            <p>Be part of the solution for a cleaner, greener planet.</p>
+            <button class="hero-button">Get Started</button>
+        </section>
+    
+        <!-- About Section -->
+        <section class="about">
+            <div class="about-content">
+                <h2>Why Join Us?</h2>
+                <p>Welcome to the heart of Sustainify’s mission! At Sustainify, we believe that every individual, community, and organization has the power to make a significant impact on the health of our planet. Waste management isn't just about sorting trash – it’s about changing habits, creating responsible communities, and building a future where resources are used mindfully, and waste is minimized.</p>
+                <p>If you’re passionate about protecting the environment, conserving resources, and supporting a circular economy, then you’re in the right place. By joining Sustainify, you're not only helping reduce landfill waste but also contributing to a global movement toward sustainability.</p>
+            </div>
+        </section>
+    
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <h2>What You Gain from Joining Us</h2>
+            <ul>
+                <li><strong>Make a Lasting Impact:</strong> Play a direct role in reducing pollution, saving resources, and creating a cleaner, healthier environment for future generations.</li>
+                <li><strong>Access to Resources and Expertise:</strong> Get exclusive access to resources, tips, and expert guidance to help you adopt sustainable practices at home or in your business.</li>
+                <li><strong>Build Connections:</strong> Meet like-minded people who are equally passionate about sustainability and environmental stewardship.</li>
+                <li><strong>Gain Recognition:</strong> Earn acknowledgment for your contributions to sustainability through shout-outs, featured stories, and other forms of recognition.</li>
+                <li><strong>Learn and Grow:</strong> Through webinars, newsletters, and events, you’ll discover new ways to manage waste responsibly and stay informed about eco-friendly innovations.</li>
+            </ul>
+        </section>
+    
+        <!-- Programs Section -->
+        <section class="programs">
+            <h2>How You Can Get Involved</h2>
+            <div class="program-cards">
+                <div class="program-card">
+                    <h3>Volunteer with Us</h3>
+                    <p>Join our volunteer programs and help with clean-ups, recycling events, and educational outreach. Your time and energy can make a huge difference.</p>
+                </div>
+                <div class="program-card">
+                    <h3>Become a Member</h3>
+                    <p>By becoming a member, you’ll enjoy special perks, early access to events, and regular updates on our impact and progress.</p>
+                </div>
+                <div class="program-card">
+                    <h3>Partner with Us</h3>
+                    <p>Collaborate with us to promote responsible waste management practices through sponsorship, expertise sharing, or promoting recycling programs.</p>
+                </div>
+                <div class="program-card">
+                    <h3>Share Your Voice</h3>
+                    <p>Advocate for the environment by sharing our mission and becoming an ambassador for sustainable waste management.</p>
+                </div>
+                <div class="program-card">
+                    <h3>Choose Sustainable Practices</h3>
+                    <p>Opt for reusable products, reduce single-use plastics, and participate in recycling programs.</p>
+                </div>
+                <div class="program-card">
+                    <h3>Spread the Word</h3>
+                    <p>Share your knowledge and enthusiasm for sustainability to inspire others in your community.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Call to Action Section -->
+        <section class="call-to-action">
+            <h2>Join Our Growing Community Today!</h2>
+            <p>Let’s work side by side to reduce waste, protect natural resources, and build a greener, cleaner, and more sustainable planet.</p>
+            <button class="join-button">Join Us Today</button>
+        </section>
+    
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Sustainify | All Rights Reserved</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </footer>
+    
+    </body>
+    </html>
+    
+
 </body>
 </html>
-
-
-
-<div class="yes">
-    <h1 >Sustainify</h1>
-    
-    <div class="group">
-        <input placeholder="Search" type="search" class="input">
-      </div>
-    <button onclick="document.location='login.html'"> Log in 
-    </button>
-    </div>
-    <div class="header-container">
-        <div class="header-content">
-            <h1>We love to recycle, 
-                <br>and you?</h1>
-                <br>
-            <p>Join us in making a difference by embracing sustainable practices that protect our planet for future generations.</p>
-            <br>
-            <div class="header-buttons">
-                <button onclick="document.location='solutions.html'">Solutions</button>
-                <button onclick="document.location='join.html'">Join Us</button>
-                <button onclick="document.location='about.html'">About</button>
-
-            </div>
-        </div>
-
-    </div>

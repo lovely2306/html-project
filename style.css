@@ -117,18 +117,24 @@ button {
 
 
 .header-container {  
-
-    
-margin-bottom: 50px;    background-color: #ACE1AF;
+margin-bottom: -30px;
+    background-image: url('Images/forest.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/forest.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ACE1AF;
     text-align: center;
-    padding: 50px 30px;
+    padding: 30px 30px;
     
 }
 
+
 .header-content h1 {
-    margin-top: 25px;
+    margin-top: 50px;
     font-size: 60px;
     text-align: left;
+    color: white;
 } 
 
 
@@ -136,6 +142,7 @@ margin-bottom: 50px;    background-color: #ACE1AF;
     font-size: 20px;
     margin-bottom: 25px;
     text-align: left;
+    color: white;
 }
 
 .header-buttons button {
@@ -162,9 +169,11 @@ margin-bottom: 50px;    background-color: #ACE1AF;
 }
 .button:active {
     scale: 1;
-  }
-    
 
+}
+ 
+
+ 
 .info-container {
     display: flex;
     justify-content: space-around;
@@ -236,7 +245,17 @@ margin-bottom: 50px;    background-color: #ACE1AF;
     background-color: #e6f7ec;
     text-align: center;
 }
-
+.sum{
+    text-align: left;
+    cursor: pointer;
+    color: white;
+}
+.sum a{
+text-decoration: none;
+color: green;
+cursor: pointer;
+color: white;
+}
 .about-card {
     max-width: 300px;
     padding: 20px;
@@ -271,7 +290,30 @@ margin-bottom: 50px;    background-color: #ACE1AF;
     color: #4a5568;
     font-size: 1em;
 }
+.photos{
+background-color:#ACE1AF;
 
+}
+.save{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+ .save img{
+    margin-top: 28px;
+    width:15%;
+    height: 85%;
+ object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: all ease-in-out 0.5s;
+}
+
+.save img:hover{
+    width: 20%;
+}
 .earth {
     text-align: center;
     padding: 40px;
