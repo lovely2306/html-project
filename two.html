@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automated Waste Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+
     <style>
     * {
         margin: 0;
@@ -24,6 +29,7 @@
         width: 90%;
         margin: 0 auto;
         max-width: 1200px;
+        background-color: #2c6b2f; 
     }
     
     /* Header Styles */
@@ -85,7 +91,7 @@
     
     /* Solution Section Styles */
     .solutions {
-        background-color: #fff;
+        background-color: #fff;background: linear-gradient(90deg, rgba(7,36,0,0.8576680672268908) 0%, rgba(9,121,18,0.7456232492997199) 35%, rgba(0,255,59,0.5747549019607843) 100%);t(135deg, #388e3c, #4caf50); 
         padding: 40px 0;
     }
     
@@ -106,6 +112,7 @@
         font-size: 2.2em;
         color: #388e3c; /* Darker green for titles */
         margin-bottom: 15px;
+        
     }
     
     .solution p {
@@ -260,7 +267,11 @@
         margin: 0 auto;
         text-align: center;
     }
-    
+    .container h1{
+        font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+    }
     /* Title Styling */
     .waste-handling h1 {
         font-size: 2.8em;
@@ -269,6 +280,7 @@
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 2px;
+        
     }
     
     /* Intro Styling */
@@ -337,7 +349,9 @@
             margin-bottom: 10px;
         }
     }
-    
+    .ting{
+        margin-top: -5px;
+    }
     </style>
 </head>
 <body>
@@ -346,6 +360,8 @@
         <ul class="nav-links">
             <li onclick="document.location='index.html'" ><a href="#home">Home</a></li>
             <li onclick="document.location='about.html'"><a href="#about">About</a></li>
+            <li onclick="document.location='solutions.html'"><a href="#solution">Solution</a></li>
+      
         </ul>
     </nav>
     <header>
@@ -379,7 +395,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="ting">
         <p>&copy; 2024 Automated Waste Management Solutions</p>
     </footer>
 </body>

@@ -3,50 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+
 <style>
-.header {
-    background-color: #2e7d32;
-    padding: 15px 20px;
-    color: #fff;
-}
 
-.header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header .logo {
-    display: flex;
-    align-items: center;
-}
-
-.header .logo img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.header .logo h1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.header .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.header .nav-links a:hover {
-    color: rgba(46, 125, 50, 0.8);
-}
 .navbar {
-    width: 100%;
+    width: 1310px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,39 +46,35 @@
 }
 
 
-.solution-section {
-    background-color: #e8f5e9;
-    padding: 50px;
-    max-width: 850px;
-    margin: 0 auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 12px;
-    box-shadow: 0px 6px 15px rgba(0, 128, 0, 0.2);
-}
-
-/* Header Styling */
 .solution-header {
     text-align: center;
-    margin-bottom: 30px;
+margin-top: -30px;
+margin-bottom: -20px;
+    background-color: green;
+    font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+   
 }
 
-.solution-header h2 {
+.solution-header h1 {
     color: #1b5e20;
     font-size: 2.2em;
     font-weight: 700;
     margin-bottom: 5px;
+    
+    
 }
 
 .solution-header p {
-    color: #4e4e4e;
+    color: #2e7d32;
     font-size: 1.2em;
 }
 
 /* Solution Item Styling */
 .solution-item {
-    background-color: #ffffff;
     padding: 25px 30px;
-    border-radius: 12px;
+background-color: #ACE1AF;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     margin-top: 15px;
 }
@@ -176,12 +137,14 @@
         <ul class="nav-links">
             <li onclick="document.location='index.html'" ><a href="#home">Home</a></li>
             <li onclick="document.location='about.html'"><a href="#about">About</a></li>
+            <li onclick="document.location='solutions.html'"><a href="#solution">Solution</a></li>
+      
         </ul>
     </nav>
-    <section class="wa
-    <div class="solution-section">
+    <section class="waste">
+    <div class="home">
         <div class="solution-header">
-            <h2>Waste Management Solutions</h2>
+            <h1>Waste Management Solutions</h1>
             <p>Learn about our comprehensive solutions for responsible waste management.</p>
         </div>
     
@@ -205,6 +168,6 @@
             </ul>
         </div>
     </div>
-    
+    </section>
 </body>
 </html>

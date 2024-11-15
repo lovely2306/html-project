@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
     <title>Join Us - Sustainify</title>
 <style>
 /* General Styles */
@@ -18,40 +19,55 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
+.yadi{
+    font-size: 30px;;
+}
 .navbar {
+    width: 100%;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #2a9d8f;
+    padding: 1rem 1rem;
+    background-color: #4CAF50;
+    color: #fff;
 }
 
 .navbar .logo {
     font-size: 1.5rem;
-    color: white;
-    font-weight: bold;
 }
 
-.navbar nav a {
-    color: white;
-    margin: 0 1rem;
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1rem;
+    font-size: 25px;
+}
+
+.nav-links a {
+    color: #fff;
     text-decoration: none;
-    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
 }
 
-.navbar .join-button {
-    padding: 0.6rem 1.2rem;
-    background-color: #e76f51;
+.nav-links a:hover {
+    background-color: #3a9d3a;
+    border-radius: 5px;
+}
+.yadi{
     color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
 }
-
 .hero {
+    background-image: url('Images/hero.jpg');
+    
+    background-size: cover;
+ width: 100%;
+    margin-top: -1px;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.example.com/hero-background.jpg') no-repeat center center/cover;
     color: white;
     padding: 4rem 1rem;
 }
@@ -67,13 +83,67 @@ body {
 }
 
 .hero .hero-button {
-    padding: 0.8rem 1.5rem;
     background-color: #e76f51;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 4px;
     font-size: 1rem;
+}
+
+.photos{
+background-color:#ACE1AF;
+
+}
+.save{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+ .save img{
+    margin-top: 28px;
+    width:15%;
+    height: 85%;
+ object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: all ease-in-out 0.5s;
+}
+
+.save img:hover{
+    width: 20%;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.box {
+    border: 5px solid #4CAF50;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px; 
+    height: 200px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.box img {
+    width: 100%;
+    height: 200px;
+    border-bottom: 2px solid #ccc;
+}
+
+.box p {
+    padding: 15px;
+    font-size: 1.1em;  
+    color: #333;
 }
 
 section {
@@ -175,14 +245,15 @@ h2 {
     
         <!-- Navbar -->
         <header class="navbar">
-            <div class="logo">Sustainify</div>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-            </nav>
-            <button class="join-button">Join Us</button>
+           
+            <nav class="navbar">
+        <h2 class="yadi">Sustainify</h2>
+        <ul class="nav-links">
+            <li onclick="document.location='index.html'" ><a href="#home">Home</a></li>
+            <li onclick="document.location='about.html'"><a href="#about">About</a></li>
+        </ul>
+    </nav>
+           
         </header>
     
         <!-- Hero Section -->
@@ -191,7 +262,31 @@ h2 {
             <p>Be part of the solution for a cleaner, greener planet.</p>
             <button class="hero-button">Get Started</button>
         </section>
-    
+        <section class="photos">
+        <div class="save">
+        <img src="Images/uno.jpg" alt="">
+        <img src="Images/dos.jpg" alt="">
+        <img src="Images/tres.jpg" alt="">
+        <img src="Images/cuatro.jpg" alt="">
+        <img src="Images/cinco.jpg" alt="">
+        <img src="Images/sais.jpg" alt="">
+
+        </div>
+        <div class="container">
+        <div class="box">
+            <img src="Images/video.gif" alt="Image 1">
+            <p>I</p>
+        </div>
+        <div class="box">
+            <img src="Images/videooo.gif" alt="Image 2">
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="Images/videooooo.gif" alt="Image 3">
+            <p></p>
+        </div>
+    </div>
+    </section>
         <!-- About Section -->
         <section class="about">
             <div class="about-content">
@@ -253,12 +348,8 @@ h2 {
     
         <!-- Footer -->
         <footer class="footer">
-            <p>© 2024 Sustainify | All Rights Reserved</p>
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-            </div>
+            <p>©2024 Sustainify | All Rights Reserved</p>
+          
         </footer>
     
     </body>
