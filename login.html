@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Faculty+Glyphic&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Waste Management - Login</title>
 <style>
-    /* General reset */
 * {
     back
     margin: 0;
@@ -41,6 +43,10 @@ margin-top: -10px;
 .nav-links {
     list-style-type: none;
     font-family: ;
+    font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
 }
 
 .nav-links li {
@@ -99,6 +105,9 @@ margin-top: -10px;
     margin-bottom: 2rem;
 }
 
+.login-container {
+    justify-content: center;
+}
 
 .form-container {
     display: flex;
@@ -172,7 +181,6 @@ input[type="password"]:focus {
     transform: translateY(-2px);
 }
 
-/* Signup prompt */
 .signup-prompt {
     font-size: 0.9rem;
     color: #666;
@@ -208,7 +216,6 @@ input[type="password"]:focus {
             <p class="subtitle">Log in to manage waste sustainably</p>
         </div>
 
-        <!-- Login Form -->
         <div class="form-container">
             <form>
                 <div class="input-group">
